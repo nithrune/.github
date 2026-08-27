@@ -1,0 +1,89 @@
+name: Content issue
+description: Balance, wording, rates, recipes, translations or textures
+labels: ["content"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        For content that *works* but is wrong, unclear or unfair.
+        If something is actually broken, use the bug report instead.
+
+        ### Minimum information
+
+        Balance and rate feedback is only usable if we know what you were
+        running and what you actually saw. "Too hard" without numbers cannot
+        be acted on.
+
+        | Field | Good | Not good |
+        |---|---|---|
+        | This repository | `v1.2.0`, or commit `4e250ab` | `latest` |
+        | Server / client | `Paper 26.2 (build 119)` | `newest` |
+        | What you observed | "4 players, iron gear, 12 min, 3 attempts" | "took ages" |
+
+  - type: input
+    id: version
+    attributes:
+      label: Version or commit of this repository
+      placeholder: "v1.2.0 — or 4e250ab"
+    validations:
+      required: true
+
+  - type: input
+    id: platform
+    attributes:
+      label: Server or client software, with version and build
+      placeholder: "Paper 26.2 (build 119)"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - Balance (difficulty, damage, health)
+        - Rates and probabilities
+        - Recipes or progression
+        - Ability behaviour
+        - Lore, naming or wording
+        - Translation
+        - Texture or model
+        - Documentation
+    validations:
+      required: true
+
+  - type: input
+    id: subject
+    attributes:
+      label: Which identifier or file
+      description: The exact name as it appears in the repository.
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: What is wrong
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: What you would change
+      description: >
+        Concrete numbers or exact wording. "Reduce it from 1700 to 1400" is
+        actionable; "make it easier" is not.
+    validations:
+      required: true
+
+  - type: textarea
+    id: evidence
+    attributes:
+      label: What you observed in play
+      description: >
+        How many players, what gear, how long it took, how many attempts.
+        Required for anything about balance or rates.
+      placeholder: "4 players, iron gear, roughly 12 minutes, 3 attempts before it worked"
+    validations:
+      required: true

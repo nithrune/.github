@@ -1,0 +1,71 @@
+name: Feature or content proposal
+description: Something new — an ability, a mob, a tool, a behaviour
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Proposals are judged on the problem they solve, not on how good they
+        sound. Say what is annoying today.
+
+        ### Minimum information
+
+        A proposal needs the problem, the proposal itself, and its rough
+        scope. Without the problem there is nothing to evaluate against.
+
+        If you are proposing a change to something that already exists, give
+        its version too — it may already work differently:
+
+        | Field | Good | Not good |
+        |---|---|---|
+        | This repository | `v1.2.0`, or commit `4e250ab` | `latest` |
+        | Server / client | `Paper 26.2 (build 119)` | `newest` |
+
+  - type: input
+    id: version
+    attributes:
+      label: Version or commit you are working from
+      description: Leave empty only if this is about something that does not exist yet.
+      placeholder: "v1.2.0 — or 4e250ab"
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: The problem
+      description: What is difficult, missing or tedious right now?
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: What you propose
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: What else you considered
+      description: >
+        Including doing nothing, and anything that already solves this — if
+        something else does it, name it with its version.
+
+  - type: dropdown
+    id: scope
+    attributes:
+      label: Rough scope
+      options:
+        - A tweak to something that exists
+        - A new item or ability in an existing mobpack
+        - A new mob or boss
+        - A new mobpack, plugin, mod or tool
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: help
+    attributes:
+      label: Would you help build it?
+      options:
+        - label: I am willing to open a pull request for this

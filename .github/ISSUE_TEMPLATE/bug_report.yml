@@ -1,0 +1,109 @@
+name: Bug report
+description: Something fails to load, or behaves wrongly
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Not for security problems — see [SECURITY.md](https://github.com/nithrune/.github/blob/main/SECURITY.md).
+
+        Read the repository's `README.md` first, and its `INSTALL.md` if it has one.
+        Most reports turn out to be something already documented there.
+
+        ### Minimum information
+
+        Every field marked required has to be filled in properly. A report that
+        says "latest version" or "newest build" cannot be acted on and will be
+        closed as unactionable.
+
+        **Give every version number in full, including the build where the
+        software has one:**
+
+        | Field | Good | Not good |
+        |---|---|---|
+        | This repository | `v1.2.0`, or commit `4e250ab` | `latest`, `main` |
+        | Server / client | `Paper 26.2 (build 119)` | `Paper`, `1.21`, `newest` |
+        | Anything else installed | `AutoRank v23.1` | `AutoRank`, `current` |
+
+  - type: input
+    id: version
+    attributes:
+      label: Version or commit of this repository
+      description: A release tag, or the commit hash you are running.
+      placeholder: "v1.2.0 — or 4e250ab"
+    validations:
+      required: true
+
+  - type: input
+    id: platform
+    attributes:
+      label: Server or client software, with version and build
+      description: Whatever runs this. Include the build number if there is one.
+      placeholder: "Paper 26.2 (build 119)"
+    validations:
+      required: true
+
+  - type: textarea
+    id: other
+    attributes:
+      label: Everything else installed that could be involved
+      description: >
+        One per line, each with its version. Include anything that touches the
+        same behaviour — permissions, protection, economy, ranks, world
+        management. Write "none" if the setup is otherwise clean.
+      placeholder: |
+        AutoRank v23.1
+        ExtendedChest v4.2.0
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: What you expected
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: What happened instead
+    validations:
+      required: true
+
+  - type: textarea
+    id: repro
+    attributes:
+      label: Steps to reproduce
+      description: Numbered, from a clean start. Include the exact commands you ran.
+      placeholder: |
+        1.
+        2.
+        3.
+    validations:
+      required: true
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Console output
+      description: >
+        The actual text, with the twenty or so lines around it — not a
+        paraphrase and not a screenshot. Write "no output" if the log stayed
+        silent, which is itself useful information.
+      render: text
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: confirmations
+    attributes:
+      label: Confirmations
+      options:
+        - label: I gave full version numbers above, not "latest"
+          required: true
+        - label: I tested in survival mode, not creative
+          required: true
+        - label: I read the full startup or reload log, not only the error
+          required: true
+        - label: I am running an unmodified copy of this repository

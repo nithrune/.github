@@ -1,0 +1,19 @@
+Nithrune — scope of the CC0 dedication
+======================================
+
+The files in this repository are dedicated to the public domain under
+CC0 1.0 Universal (see LICENSE). Copy them, adapt them, ship them, no
+attribution required.
+
+That dedication does NOT extend to:
+
+  * the name "Nithrune"
+  * the Nithrune rune mark, wordmark and avatars, wherever they appear
+
+Those remain all rights reserved. Copyright and trademark are separate
+things: releasing a file into the public domain does not grant anyone
+the right to present their work as Nithrune's.
+
+This is the org-repo. It carries organisation-wide defaults only, and
+licenses nothing outside itself — GitHub does not support inherited
+licence files, so every repository states its own.
