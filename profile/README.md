@@ -4,7 +4,7 @@
 
 ---
 
-Old Norse **_níð_** means *downward, below*. It shares a root with English
+Old Norse **_niðr_** means *downward*. It shares a root with English
 *nether*. A **rune** is a mark cut into a surface to make it mean something.
 
 Nithrune cuts the marks that live below.
