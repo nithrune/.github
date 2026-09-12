@@ -33,9 +33,13 @@ Every repository is named after what it holds:
 | `mod-*` | Client and server mods |
 | `rp-*` | Resource and texture packs |
 | `tool-*` | Build, generation and test tooling |
+| `web-*` | The website and the project wikis it publishes |
 
 Each repository documents itself: what it targets, what it needs to run,
 and how to install it live in its own `README.md` and `INSTALL.md`.
+
+Longer documentation lives on the web instead: each project gets its own
+subdomain, and everything about that project is a page under it.
 
 ## Licensing
 
@@ -45,6 +49,10 @@ split is explained in
 [CONTRIBUTING.md](https://github.com/nithrune/.github/blob/main/CONTRIBUTING.md).
 
 The Nithrune name and marks are excluded from all of them.
+
+`web-*` is the one exception. Those repositories carry an all-rights-reserved
+licence: reading the website and the wikis is permitted, copying, modifying or
+republishing any part of them is not. Ask by opening an issue.
 
 ## Reporting something
 

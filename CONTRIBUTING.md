@@ -19,6 +19,7 @@ files, and code and artwork want different terms:
 | `tool-*`, `mod-*` | MIT | standalone; maximum reuse |
 | `plugin-*` | GPL-3.0 | the server API these are compiled against is GPL-3.0, so a plugin is arguably a derivative work; matching it removes the question |
 | `mobpack-*`, `rp-*` | CC BY-NC-SA 4.0 | creative content, not software: credit required, share-alike, no commercial reuse |
+| `web-*` | All rights reserved | the website and the project wikis it builds: code, styling and written content all stay closed |
 | `.github` | CC0 1.0 | boilerplate nobody should have to attribute |
 
 **By opening a pull request you agree your contribution is licensed under
@@ -27,6 +28,12 @@ CLA to sign.
 
 The Nithrune name and marks are excluded from every licence above. Fork
 the code freely; do not ship it as Nithrune.
+
+**`web-*` is the exception: its licence grants nothing.** Reading the website
+and the project wikis is permitted; copying, modifying or republishing any
+part of them is not, and being public to read implies no permission to reuse.
+These repositories take no contributions. Ask for permission, or report a
+documentation error, by opening an issue.
 
 **Never contribute anything you do not hold the rights to.** Assets taken
 from another creator's pack, from a paid resource, or extracted from
