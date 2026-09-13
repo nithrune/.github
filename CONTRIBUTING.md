@@ -11,29 +11,48 @@ and documentation — so agreeing the shape first saves you rewriting it.
 
 ## Licensing — read this before your first pull request
 
-There is no organisation-wide licence. GitHub cannot inherit licence
-files, and code and artwork want different terms:
+Terms differ by repository, so each carries its own LICENSE. GitHub cannot
+inherit one in any case: a licence file has to travel with the clone, which is
+why it is the one community-health file that is never a default.
 
 | Repository | Licence | Why |
 |---|---|---|
-| `tool-*`, `mod-*` | MIT | standalone; maximum reuse |
-| `plugin-*` | GPL-3.0 | the server API these are compiled against is GPL-3.0, so a plugin is arguably a derivative work; matching it removes the question |
-| `mobpack-*`, `rp-*` | CC BY-NC-SA 4.0 | creative content, not software: credit required, share-alike, no commercial reuse |
-| `web-*` | All rights reserved | the website and the project wikis it builds: code, styling and written content all stay closed |
-| `.github` | CC0 1.0 | boilerplate nobody should have to attribute |
+| `rp-*` | CC BY-NC-SA 4.0 | these packs ship Minecraft's own pixels, so a grant here can only cover Nithrune's contribution. Mojang's guidelines forbid selling work built from their assets, which makes NonCommercial an obligation rather than a preference |
+| everything else except `.github` | All rights reserved | entirely Nithrune's work. Forking, modifying or redistributing needs permission asked for first |
+| `.github` | CC0 1.0 | boilerplate that exists to be copied, and nobody should have to attribute it |
 
-**By opening a pull request you agree your contribution is licensed under
-that repository's licence.** Inbound equals outbound; there is no separate
-CLA to sign.
+**All rights reserved means what it says.** Downloading a release and running
+it on your server is what these repositories are for. Copying the source, a
+pack, a texture or a page of documentation into your own project, forking a
+repository, or redistributing any of it is not permitted without explicit
+written permission.
 
-The Nithrune name and marks are excluded from every licence above. Fork
-the code freely; do not ship it as Nithrune.
+Ask by opening an issue in this repository. Permission is often given; it is
+just not assumed.
 
-**`web-*` is the exception: its licence grants nothing.** Reading the website
-and the project wikis is permitted; copying, modifying or republishing any
-part of them is not, and being public to read implies no permission to reuse.
-These repositories take no contributions. Ask for permission, or report a
-documentation error, by opening an issue.
+**The `rp-*` row follows the content, not the prefix.** A pack that ships any
+Minecraft asset cannot be all rights reserved, because the underlying pixels
+are not Nithrune's to reserve. A pack drawn entirely from scratch can be. Each
+repository's own NOTICE records which it is, and the licence follows from that.
+The same test applies to any future `mobpack-*` that ships Mojang artwork.
+
+**One question is pending.** `plugin-*` compiles against a GPL-3.0 server API,
+which may oblige a plugin to be GPL-3.0 as well. Mojang's terms also restrict
+selling work built from the game. Both will be answered before any plugin is
+published or sold.
+
+**Contributions.** By opening a pull request you grant Nithrune a perpetual,
+worldwide, irrevocable, royalty-free licence to use, modify, publish and
+relicense your contribution as part of the project. You keep your own copyright
+and may use your contribution elsewhere. This grant is needed because most of
+these repositories reserve all rights: a licence that grants nothing cannot
+carry a contribution back to the project. There is no separate CLA to sign.
+
+`web-*` repositories take no contributions at all. Report a documentation
+error as an issue on the repository the documentation is about.
+
+The Nithrune name and marks are reserved separately from all of this and are
+never licensed. Do not present your work as Nithrune's.
 
 **Never contribute anything you do not hold the rights to.** Assets taken
 from another creator's pack, from a paid resource, or extracted from

@@ -43,16 +43,19 @@ subdomain, and everything about that project is a page under it.
 
 ## Licensing
 
-There is no org-wide licence: GitHub cannot inherit one, and code and
-artwork want different terms. Each repository carries its own, and the
-split is explained in
+Most repositories here are **all rights reserved**. `rp-*` packs are
+CC BY-NC-SA 4.0, because they build on Minecraft's own artwork and that part
+was never ours to reserve. This one is CC0, so its boilerplate can be copied
+freely.
+
+Downloading a release and running it is what these repositories are for.
+Forking, or copying source, packs, textures or documentation into your own
+project, needs permission asked for first. Open an issue here: permission is
+often given, it is just never assumed.
+
+The Nithrune name and marks are reserved separately and are never licensed.
+Full detail in
 [CONTRIBUTING.md](https://github.com/nithrune/.github/blob/main/CONTRIBUTING.md).
-
-The Nithrune name and marks are excluded from all of them.
-
-`web-*` is the one exception. Those repositories carry an all-rights-reserved
-licence: reading the website and the wikis is permitted, copying, modifying or
-republishing any part of them is not. Ask by opening an issue.
 
 ## Reporting something
 
