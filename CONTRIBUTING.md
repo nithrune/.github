@@ -17,7 +17,7 @@ why it is the one community-health file that is never a default.
 
 | Repository | Licence | Why |
 |---|---|---|
-| `rp-*` | CC BY-NC-SA 4.0 | these packs ship Minecraft's own pixels, so a grant here can only cover Nithrune's contribution. Mojang's guidelines forbid selling work built from their assets, which makes NonCommercial an obligation rather than a preference |
+| packs that ship Minecraft's own artwork | CC BY-NC-SA 4.0 | a grant here can only cover Nithrune's contribution, since the underlying pixels are Mojang's. Their guidelines forbid selling work built from those assets, which makes NonCommercial an obligation rather than a preference |
 | everything else except `.github` | All rights reserved | entirely Nithrune's work. Forking, modifying or redistributing needs permission asked for first |
 | `.github` | CC0 1.0 | boilerplate that exists to be copied, and nobody should have to attribute it |
 
@@ -30,16 +30,10 @@ written permission.
 Ask by opening an issue in this repository. Permission is often given; it is
 just not assumed.
 
-**The `rp-*` row follows the content, not the prefix.** A pack that ships any
-Minecraft asset cannot be all rights reserved, because the underlying pixels
-are not Nithrune's to reserve. A pack drawn entirely from scratch can be. Each
-repository's own NOTICE records which it is, and the licence follows from that.
-The same test applies to any future `mobpack-*` that ships Mojang artwork.
-
-**One question is pending.** `plugin-*` compiles against a GPL-3.0 server API,
-which may oblige a plugin to be GPL-3.0 as well. Mojang's terms also restrict
-selling work built from the game. Both will be answered before any plugin is
-published or sold.
+**The first row follows content, never prefix.** A pack that ships Minecraft
+artwork cannot be all rights reserved, because those pixels are not Nithrune's
+to reserve. A pack generated from scratch can be. Each repository's own NOTICE
+records which it is, and its licence follows from that.
 
 **Contributions.** By opening a pull request you grant Nithrune a perpetual,
 worldwide, irrevocable, royalty-free licence to use, modify, publish and

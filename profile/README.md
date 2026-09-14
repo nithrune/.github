@@ -43,10 +43,9 @@ subdomain, and everything about that project is a page under it.
 
 ## Licensing
 
-Most repositories here are **all rights reserved**. `rp-*` packs are
-CC BY-NC-SA 4.0, because they build on Minecraft's own artwork and that part
-was never ours to reserve. This one is CC0, so its boilerplate can be copied
-freely.
+Most repositories here are **all rights reserved**. A pack that builds on
+Minecraft's own artwork is CC BY-NC-SA 4.0 instead, because that part was never
+ours to reserve. This one is CC0, so its boilerplate can be copied freely.
 
 Downloading a release and running it is what these repositories are for.
 Forking, or copying source, packs, textures or documentation into your own
